@@ -2,8 +2,7 @@
 
 Simple API providing the following methods:
 
-- a GET request `/id/<12345>` where <12345> is the cartodb_id
-it should return a JSON document including the `cartodb_id` requested, the `name`, the `polulation` and the point `coordinates` :
+- a GET request `/id/<12345>` where <12345> is the cartodb_id will return a JSON document including the `cartodb_id` requested, the `name`, the `population` and the point `coordinates` :
 ex :
 ```
 curl -ks http://localhost:8080/id/744
