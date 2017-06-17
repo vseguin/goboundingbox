@@ -6,7 +6,7 @@ Simple API providing the following methods:
 it should return a JSON document including the `cartodb_id` requested, the `name`, the `polulation` and the point `coordinates` :
 ex :
 ```
-curl -ks https://localhost:8080/id/744
+curl -ks http://localhost:8080/id/744
 
 {"cartodb_id": 744,
 "name": "oriel",
