@@ -1,2 +1,2 @@
 # goboundingbox
-Messing up in golang.
+Messing up in go. 
