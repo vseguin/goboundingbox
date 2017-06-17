@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"os"
 
-	"./utils"
+	"./entities"
 
 	"github.com/gorilla/mux"
 	"github.com/zemirco/couchdb"
@@ -50,7 +50,7 @@ func GetLocation(db couchdb.DatabaseService) func(w http.ResponseWriter, r *http
 		vars := mux.Vars(r)
 		locationId := vars["locationId"]
 
-		doc := &utils.City{}
+		doc := &entities.City{}
 
 		if err := db.Get(doc, locationId); err != nil {
 			w.WriteHeader(400)
